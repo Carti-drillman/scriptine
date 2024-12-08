@@ -1,0 +1,60 @@
+# Scriptine Programming Language
+
+## Overview
+
+**Scriptine** is an interpreted language that based on JavaScript and Typescript.
+
+## Features
+- **Variable Declarations**: Declare variables using `let`.
+- **String Handling**: Supports string literals for storing and displaying text.
+- **Console Output**: Print output using `console.log()`.
+- **Simple Parsing and Execution**: Executes `.stine` code line-by-line.
+
+### Prerequisites
+Ensure you have a C++ compiler installed (e.g., `g++`).
+
+### Installation Steps
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Carti-drillman/scriptine.git
+   cd scriptine
+   ```
+
+2. **Compile the interpreter.cpp file**
+    ``` bash
+    g++ interpreter.cpp -o Scriptine
+    ```
+
+3. **Create a file that ends with `.stine`**
+    ```bash
+    ./Scriptine example.stine
+    ```
+
+## Output Explanation
+
+If you run example.stine, you might see this in terminal.
+```bash
+    Token: let (3)
+    Token: name (2)
+    Token: = (8)
+    Token: John Doe (1)
+    Token: ; (14)
+    Token: console.log (2)
+    Token: ( (10)
+    Token: name (2)
+    Token: ) (11)
+    Token: ; (14)
+```
+
+`Token: let (3)` – The let keyword, representing a variable declaration.
+`Token: name (2)` – An identifier, which is the variable name name.
+`Token: = (8) – The assignment operator =.
+`Token: John Doe (1)` – A string literal `"John Doe"`.
+`Token: ; (14)` – A statement terminator, the semicolon ;.
+`Token: console.log (2)` – An identifier for the function console.log.
+`Token: ( (10)` – The opening parenthesis ( for the function call.
+`Token: name (2)` – The identifier name, referring to the previously declared variable.
+`Token: ) (11)` – The closing parenthesis ) for the function call.
+`Token: ; (14)` – A statement terminator, the semicolon ;.
+
+For any questions, suggestions, or contributions, please contact mmbkmcgamming2014@gmail.com or visit the GitHub repository.
